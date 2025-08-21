@@ -2,7 +2,8 @@
 
 #include <string>
 #include <chrono>
-#include "User.h"
+//#include "User.h"
+class User;
 
 class Comment{
 public:
