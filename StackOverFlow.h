@@ -11,17 +11,19 @@ class Tag;
 class StackOverFlow {
 public:
 
-    std::vector<Question> getQuestions() const;
-    std::vector<User> getUsers() const;
-    std::vector<Tag> getTags() const;
+    StackOverFlow();
+
+    const std::vector<Question>& getQuestions() const;
+    const std::vector<User>& getUsers() const;
+    const std::vector<Tag>& getTags() const;
 
 
     void askQuestion(const User& user, const std::string& title, const std::string& content);
     void registerUser(const std::string& username, const std::string& email);
     void addTag(const std::string& name);
 
-    const User& getUser(std::string userId);
-    const Question& getQuestion(std::string questionId);
+    const User& getUser(std::string userId) const;
+    const Question& getQuestion(std::string questionId) const;
 
 private:
     std::vector<Question> questions_;
