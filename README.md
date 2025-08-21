@@ -53,3 +53,13 @@ Design and implement a simplified StackOverflow-like Q&A platform. The system sh
 7.  **[FEAT] : adds commentable and votable abstract base classes**
     -   **methods for `Commentable` abstract class**: `addComment`, `getComments`.
     -   **methods for `Votable` abstract class**: `vote`, `getVoteCount`.
+
+8. **[FEAT] : adds answer header**
+    - **methods :**
+        - **getters : getId, getAuthor(const &User), getQuestion(const &Question), getContent, isAccepted, getVoteCount, getComments**
+        - **other : markAccepted, vote, addComment**
+        - **variables : accepted, Author(&User), question(&Question), id, content, creation_date, votes(vector<votes>), comments(vector<comments>)**
+
+9. **[FEAT] : implements answer class**
+
+10. 
