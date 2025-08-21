@@ -62,4 +62,8 @@ Design and implement a simplified StackOverflow-like Q&A platform. The system sh
 
 9. **[FEAT] : implements answer class**
 
-10. 
+10. **[FEAT] : adds question header and implementation**
+    - **methods :**
+        - **getters : getId, getAuthor(const &User), getContent, getVoteCount, getComments, getAnswers, getCreationDate**
+        - **other : vote, addComment, addAnswer**
+        - **variables : title, Author(&User), id, content, creation_date, Answers(vector<Answer>), votes(vector<votes>), comment(vector<comments)**
