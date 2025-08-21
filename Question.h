@@ -22,6 +22,7 @@ public:
 
     void addAnswer(const Answer& answer);
     std::vector<Answer> getAnswers() const;
+    Answer& getAnswer(const std::string& answerId);
 
     void vote(const User& voter, VoteType type) override;
     int getVoteCount() const override;

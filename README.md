@@ -64,6 +64,12 @@ Design and implement a simplified StackOverflow-like Q&A platform. The system sh
 
 10. **[FEAT] : adds question header and implementation**
     - **methods :**
-        - **getters : getId, getAuthor(const &User), getContent, getVoteCount, getComments, getAnswers, getCreationDate**
+        - **getters : getId, getAuthor(const &User), getContent, getVoteCount, getComments, getAnswers, getAnswer, getCreationDate**
         - **other : vote, addComment, addAnswer**
         - **variables : title, Author(&User), id, content, creation_date, Answers(vector<Answer>), votes(vector<votes>), comment(vector<comments)**
+
+11. **[FEAT] : stackOverFlow main header implementation**
+    - **methods :**
+        - **getter : getQuestions, getTags, getUsers, getUser, getQuestion**
+        - **askQuestion, registerUser, addTag**
+    - **Variables : questions(vector<Question>), users(vector<User>), tags(vector<Tag>)**

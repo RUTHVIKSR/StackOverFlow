@@ -4,8 +4,7 @@
 #include <memory>
 #include "Types.h"
 #include "Vote.h"
-
-class Answer;
+#include "Answer.h"
 
 std::string generateId(){
     static int counter = 0;
@@ -41,6 +40,15 @@ std::vector<Answer> Question::getAnswers() const{
         ans.push_back(*answer);
     }
     return ans;
+}
+
+Answer& Question::getAnswer(const std::string& answerId) {
+    for (const auto& answer : answers_) {
+        if (answer->getId() == answerId) {
+            return *answer;
+        }
+    }
+    throw std::runtime_error("Answer not found");
 }
 
 void Question::vote(const User& voter, VoteType type){
